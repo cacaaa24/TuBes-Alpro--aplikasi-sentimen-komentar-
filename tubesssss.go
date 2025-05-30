@@ -328,22 +328,22 @@ func main () {
     }         
 }
 func menu(){
-    fmt.Println(" APLIKLASI ANALISIS SENTIMEN      ")
-    fmt.Println("==================================")
-    fmt.Println("   Silahkan Pilih Aktivitas    ")
-    fmt.Println("==================================")
-    fmt.Println("1. Masukan Komentar")
-    fmt.Println("2. Hapus Komentar ")
-    fmt.Println("3. Mengedit Komentar")
-    fmt.Println("4. Mencari Komentar ")
-    fmt.Println("5. Mencari username  ")
-    fmt.Println("6. Cetak berdasarkan urutan input   ")
-    fmt.Println("7. Cetak berdasarkan panjang komentar (dari terpendek ke terbesar )")
-    fmt.Println("8. Cetak berdasarkan sentimen (positif ke negatif) ")
-    fmt.Println("9. Statistik ")
-    fmt.Println("10. Exit ")
-    fmt.Println("==================================")
-    fmt.Print("pilih(1/2/3/4/5/6/7/8/9/10) ")
+    fmt.Println(" 	APLIKLASI ANALISIS SENTIMEN      ")
+    fmt.Println("	==================================")
+    fmt.Println(" 	  Silahkan Pilih Aktivitas    ")
+    fmt.Println("	==================================")
+    fmt.Println("	1. Masukan Komentar")
+    fmt.Println("	2. Hapus Komentar ")
+    fmt.Println("	3. Mengedit Komentar")
+    fmt.Println("	4. Mencari Komentar ")
+    fmt.Println("	5. Mencari username  ")
+    fmt.Println("	6. Cetak berdasarkan urutan input   ")
+    fmt.Println("	7. Cetak berdasarkan panjang komentar (dari terpendek ke terbesar )")
+    fmt.Println("	8. Cetak berdasarkan sentimen (positif ke negatif) ")
+    fmt.Println("	9. Statistik ")
+    fmt.Println("	10. Exit ")
+    fmt.Println("	==================================")
+    fmt.Print("		pilih(1/2/3/4/5/6/7/8/9/10) ")
     
 }
 func negatif(word string) bool { // cek kata negatid
