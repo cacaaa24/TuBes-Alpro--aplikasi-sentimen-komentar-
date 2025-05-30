@@ -74,11 +74,11 @@ func statistik (A komentars , n int){
         }
     }
    
-    fmt.Println("Banyak komentar : " , n )
-    fmt.Println("Komentar terpanjang oleh username  : " , A[findmax(A  , n )].username )
-    fmt.Println("Banyak komentar negatif : " ,  negatif)
-    fmt.Println("Banyak komentar positif : " , positif  )
-    fmt.Println("Banyak komentar netral : " , netral )
+    fmt.Println("	Banyak komentar : " , n )
+    fmt.Println("	Komentar terpanjang oleh username  : " , A[findmax(A  , n )].username )
+    fmt.Println("	Banyak komentar negatif : " ,  negatif)
+    fmt.Println("	Banyak komentar positif : " , positif  )
+    fmt.Println("	Banyak komentar netral : " , netral )
     
     
 }
@@ -120,14 +120,14 @@ func hapuskomentar(A *komentars, n *int, Cari *int) {
     i = *Cari
 
     if i >= 0 && i < *n {
-        fmt.Println("Menghapus komentar dari", A[i].username)
+        fmt.Println("	Menghapus komentar dari", A[i].username)
         for z = i; z < *n-1; z++ {
             A[z] = A[z+1]
         }
         *n--
-        fmt.Println("Komentar berhasil dihapus.")
+        fmt.Println("	Komentar berhasil dihapus.")
     } else {
-        fmt.Println("Komentar tidak ditemukan atau tidak valid.")
+        fmt.Println("	Komentar tidak ditemukan atau tidak valid.")
     }
 }
 func binarysearch(A *komentars, n int, Cari *int) {
@@ -314,7 +314,7 @@ func main () {
          case 2: hapuskomentar(&A, &n, &Cari)
         case 3 :  edit(&A , n  , &Cari)
         case 4 : seqsearch(A , n )
-        case 5 : fmt.Print("Tilakan masukan username yang akan dicari ")
+        case 5 : fmt.Print("Tolong masukan username yang akan dicari ")
                  binarysearch(&A,n , &Cari)
         case 6 : cetakdata(A , n )
         case 7 : insertionsortkomen(&A,n)
@@ -328,22 +328,22 @@ func main () {
     }         
 }
 func menu(){
-    fmt.Println(" APLIKLASI ANALISIS SENTIMEN      ")
-    fmt.Println("==================================")
-    fmt.Println("   Silahkan Pilih Aktivitas    ")
-    fmt.Println("==================================")
-    fmt.Println("1. Masukan Komentar")
-    fmt.Println("2. Hapus Komentar ")
-    fmt.Println("3. Mengedit Komentar")
-    fmt.Println("4. Mencari Komentar ")
-    fmt.Println("5. Mencari username  ")
-    fmt.Println("6. Cetak berdasarkan urutan input   ")
-    fmt.Println("7. Cetak berdasarkan panjang komentar (dari terpendek ke terbesar )")
-    fmt.Println("8. Cetak berdasarkan sentimen (positif ke negatif) ")
-    fmt.Println("9. Statistik ")
-    fmt.Println("10. Exit ")
-    fmt.Println("==================================")
-    fmt.Print("pilih(1/2/3/4/5/6/7/8/9/10) ")
+    fmt.Println("	 APLIKLASI ANALISIS SENTIMEN      ")
+    fmt.Println("	==================================")
+    fmt.Println("  	 Silahkan Pilih Aktivitas    ")
+    fmt.Println("	==================================")
+    fmt.Println("	1. Masukan Komentar")
+    fmt.Println("	2. Hapus Komentar ")
+    fmt.Println("	3. Mengedit Komentar")
+    fmt.Println("	4. Mencari Komentar ")
+    fmt.Println("	5. Mencari username  ")
+    fmt.Println("	6. Cetak berdasarkan urutan input   ")
+    fmt.Println("	7. Cetak berdasarkan panjang komentar (dari terpendek ke terbesar )")
+    fmt.Println("	8. Cetak berdasarkan sentimen (positif ke negatif) ")
+    fmt.Println("	9. Statistik ")
+    fmt.Println("	10. Exit ")
+    fmt.Println("	==================================")
+    fmt.Print("		pilih(1/2/3/4/5/6/7/8/9/10) ")
     
 }
 func negatif(word string) bool { // cek kata negatid
